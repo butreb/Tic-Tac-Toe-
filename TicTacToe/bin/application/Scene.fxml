@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <GridPane fx:id="myGridPane" gridLinesVisible="true" layoutY="300.0" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="zero_zero" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="zero_one" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fx:id="zero_two" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="one_zero" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fx:id="one_one" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="one_two" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="two_zero" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fx:id="two_one" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="two_two" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="rightToLeftCross" fitHeight="600.0" fitWidth="600.0" layoutX="-66.0" layoutY="33.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../../Desktop/LineCross1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftToRightCross" fitHeight="600.0" fitWidth="600.0" layoutX="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../../Desktop/LineCross2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twoHorizontalLine" fitHeight="200.0" fitWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../../Desktop/Line.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneHorizontalLine" fitHeight="200.0" fitWidth="600.0" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../../Desktop/Line.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroHorizontalLine" fitHeight="200.0" fitWidth="600.0" layoutX="20.0" layoutY="20.0" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../../Desktop/Line.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroVerticalLine" fitHeight="600.0" fitWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@../../../../Desktop/LineH.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneVerticalLine" fitHeight="600.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0">
+         <image>
+            <Image url="@../../../../Desktop/LineH.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twoVerticalLine" fitHeight="600.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0">
+         <image>
+            <Image url="@../../../../Desktop/LineH.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="myLabel" alignment="CENTER" layoutY="283.0" text="X's Turn" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+              <MenuItem fx:id="resetMenu" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
